@@ -1,41 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    background-color: #f5f5f5;
 }
-.header-nav{
+
+
+/*-----------------------------------------------------
+ ---------------STYLING NAVIGATION HEADER-------------
+ ---------------------------------------------------- */
+
+.header-nav {
     width: 100%;
     height: 5.44rem;
-    /* padding: 60px; */
-    background-color:#FEFFFF ;
+    background-color: #feffff;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    
+    padding: 0rem 3.75rem;
 }
 
-
-.logo{
+.logo-sail {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
-.logo-img{
+
+.logo-sail p {
+    font-weight: 500;
+    color: #3958a7;
+}
+
+.logo-img {
     width: 3.125rem;
     height: 2.195rem;
 }
-.btns{
-    margin-right:20px;
+
+.btn {
+    padding: 0.5rem 1.563px;
+    font-size: 60%;
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid #3958a7;
 }
-.btn1,.btn2{
-    padding: 8px;
-    font-size: 80%;
+
+.btn1 {
+    background: #3958a7;
+    color: #feffff;
+    margin-right: 2.5rem;
+    border: 1px solid #3958a7;
+}
+
+.btn1:hover {
+    background: #feffff;
+    color: #3958a7;
+}
+
+.btn2 {
+    color: #3958a7;
+    background-color: #feffff;
+}
+
+.btn2:hover {
+    color: #feffff;
+    background-color: #3958a7;
+}
+
+
+/*-----------------------------------------------------
+ ---------------STYLING SECTION PROGRAM-------------
+ ---------------------------------------------------- */
+
+.program {
+    height: 70vh;
+    width: 100%vw;
+    margin: 40px 60px;
+    /* position: relative;
+    overflow: hidden; */
+}
+
+.big-text {
+    width: 33.125rem;
+    word-spacing: 2px;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 200%;
+}
+
+.small-text {
+    width: 400px;
+    text-align: justify;
+    font-size: 55%;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.btn3 {
+    margin-top: 20px;
+    padding: 10px 150px 10px 7px;
+    text-transform: capitalize;
+    background-color: #3958a7;
+    color: #feffff;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.container2 {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    width: 400px;
+    height: 400px;
+    /* border:2px solid rgb(224, 193, 18); */
+}
+
+.jimage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+
+/*-----------------------------------------------------
+ ---------------STYLING SECTION INNOVATION-------------
+ ---------------------------------------------------- */
+
+.innovation {
+    background-color: rgba(234, 225, 16, 0.06);
+    height: 80vh;
+    display: flex;
+    position: relative;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+}
+
+.img-cnt {
+    margin: 80px;
+    width: 70%;
+    height: auto;
+}
+
+.content {
+    width: 50%;
+}
+
+.content p {
+    width: 500px;
+    margin-top: 30%;
+    font-size: 55%;
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+h6 {
+    width: 300px;
+    margin-top: 10px;
+    color: #3958a7;
+}
+
+
+/*-----------------------------------------------------
+ ---------------STYLING MINI SECTION ICON-------------
+ ---------------------------------------------------- */
+
+.icon {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    top: 171%;
+    left: 10%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 60px;
+}
+
+.icons i {
+    margin-top: 15px;
+    color: #0024a3;
+}
+
+.icons {
+    display: flex;
+    padding: 5px;
+}
+
+.icons p {
+    width: 200px;
+    font-size: 65%;
+    margin-left: 20px;
+    line-height: 1.5em;
+}
+
+span {
+    font-size: 64%;
+    font-weight: 700;
+    color: #00000082;
+    word-spacing: 2px;
+}
+
+
+/*-----------------------------------------------------
+ ---------------STYLING THE FOOTER-------------
+ ---------------------------------------------------- */
+
+.footer {
+    display: flex;
+    height: 50vh;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.green p {
+    color: #00a347;
+    margin-bottom: 30px;
+    font-size: 60%;
+    font-weight: 400;
+}
+
+ul li {
+    list-style: none;
+    font-size: 60%;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.footer-icon p {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+.fa-brands {
+    color: #0024a3;
+    margin: 3px;
 }
